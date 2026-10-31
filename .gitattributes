@@ -1,0 +1,9 @@
+# Faz o GitHub detectar Dart como linguagem principal.
+*.dart linguist-detectable=true
+
+# Pastas de plataforma geradas pelo Flutter não representam o código do app.
+android/** linguist-vendored
+ios/** linguist-vendored
+macos/** linguist-vendored
+windows/** linguist-vendored
+linux/** linguist-vendored

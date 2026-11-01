@@ -1,5 +1,6 @@
 # Checklist local-first — Flutter + Couchbase Lite
 
+[![CI](https://github.com/brenoluizdev/flutter-offline-checklist/actions/workflows/ci.yml/badge.svg)](https://github.com/brenoluizdev/flutter-offline-checklist/actions/workflows/ci.yml)
 [![Flutter](https://img.shields.io/badge/Flutter-3.5-02569B?logo=flutter&logoColor=white)](https://flutter.dev)
 ![Dart](https://img.shields.io/badge/Dart-3.5-0175C2?logo=dart&logoColor=white)
 ![Couchbase Lite](https://img.shields.io/badge/Couchbase_Lite-3.x-EA2328?logo=couchbase&logoColor=white)
@@ -66,6 +67,15 @@ Requer Flutter 3.5+ e um dispositivo/emulador configurado.
 - Modelagem de dados local-first com banco embarcado, em vez de cache de API.
 - Separação em camadas (UI → Cubit → Repository → Service → banco).
 - Estado previsível: cada operação tem seu próprio Cubit e estado tipado.
+
+## Testes
+
+```bash
+flutter test
+```
+
+O CI roda `flutter analyze` e `flutter test` em todo push e pull request.
+Os testes atuais cobrem a entidade e o mapeamento de/para o documento persistido.
 
 ## Próximos passos
 
